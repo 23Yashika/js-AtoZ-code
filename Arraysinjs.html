@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in java Script</title>
+</head>
+<body>
+    <script>
+        let names = ["raja","ram","mohan","roy"];
+        console.log("length of array : "+names.length);
+        console.log("Sort of array : "+names.sort());
+        console.log("Reverse of array : "+names.reverse());
+        console.log("Insert Krishna at end");
+        names.push("krishna");
+        console.log("new array  : "+ names);
+        names.pop();
+        //after deletion of element in array
+        console.log("array after deletion : "+names);
+        console.log("comma seperate array : "+names.toString());
+        console.log("Joined Array : "+names.join(" ~ "));
+        console.log("Slicing array from index1 : "+names.slice(1));
+        names.splice(1,2,"Sita","Radha");
+        console.log("array after Splicing : "+names);
+names.shift();
+console.log("array after Shifting method : "+names);
+names.unshift('Ram');
+console.log("array after unshifting Method : "+names);
+
+
+
+
+    </script>
+</body>
+</html>

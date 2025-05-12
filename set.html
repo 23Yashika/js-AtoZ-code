@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //set
+        let set = new Set();
+        let ram = {
+            name : 'Ram',
+        }
+        let mohan = {
+            name : 'Mohan',
+        }
+        let roy = {
+            name : 'Roy',
+        }
+        set.add(ram);
+        set.add(mohan);
+        set.add(roy);
+        set.add(mohan);
+        set.add(roy);
+        console.log(set.size);
+
+        //we can iterate elements using for oop 
+        for(let user of set){
+            console.log('Set elements = '+user.name);
+        }
+
+        //a set can have an array as its elements
+        let s = new Set(['oranges','apples','bananas']);
+        for(let value of set){
+            console.log(value);
+        }
+    </script>
+</body>
+</html>

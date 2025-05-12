@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting object to json string</title>
+</head>
+<body>
+    <script>
+        let st = {
+            name : "Ram",
+            cname : "btech",
+            sub : ['html','cs','js'],
+        };
+        console.log('subject object : '+st);
+        let st_ver = JSON.stringify(st);
+        console.log('String Version of object = '+st_ver);
+        
+        //coverting a valid string version to object 
+        let st_obj1 = JSON.parse(st_ver);
+        console.log('Object version = '+st_obj1);
+        //or
+        let st_obj3 = JSON.parse(st_ver);
+console.log('Object version = ', st_obj3);
+
+        //or to print entire
+        let st_obj2 = new Object(st_ver);
+        console.log('Object version = '+st_obj2);
+        
+    </script>
+</body>
+</html>

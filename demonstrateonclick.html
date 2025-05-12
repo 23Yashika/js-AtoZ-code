@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change ID and Class on Click</title>
+    <style>
+        .header1 { color: blue; }
+        .header2 { color: green; }
+    </style>
+</head>
+<body>
+
+    <div id="d1" class="header1">
+        <h1>Heading</h1>
+        <input type="button" value="Change ID / Class" onclick="changestyle()">
+    </div>
+
+    <script>
+        function changestyle() {
+            let div = document.getElementById("d1");
+
+            // Logging current ID and class
+            console.log("Current ID:", div.id);
+            console.log("Current Class:", div.className);
+
+            // Changing ID and class
+            div.id = "newId";
+            div.className = "header2";
+
+            console.log("Changed ID to:", div.id);
+            console.log("Changed Class to:", div.className);
+        }
+    </script>
+
+</body>
+</html>

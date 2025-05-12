@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter in function</title>
+</head>
+<body>
+    <script>
+        let myfunction = function(a,b,...rest){
+console.log('first parameter = '+a);
+console.log('second parameter = '+b);
+console.log('Third parameter = '+rest);
+console.log('type of rest = '+typeof(rest));
+        }
+        myfunction(3,4,5,6,7,8,9)
+        myfunction('Hello','Hi','bye')
+        myfunction(1,false,[4,5,6],'Hello js!');
+    </script>
+</body>
+</html>

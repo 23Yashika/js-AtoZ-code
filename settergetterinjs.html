@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Getter Setter Example</title>
+</head>
+<body>
+    <script>
+        class Product {
+            constructor(name, price) {
+                this._name = name;
+                this._price = price;
+            }
+
+            // Getter for name
+            get name() {
+                return this._name;
+            }
+
+            // Setter for name
+            set name(value) {
+                this._name = value;
+            }
+
+            // Getter for price
+            get price() {
+                return this._price;
+            }
+
+            // Setter for price
+            set price(value) {
+                this._price = value;
+            }
+
+            showDetails() {
+                console.log("Name: " + this.name);
+                console.log("Price: " + this.price);
+            }
+        }
+
+        let p = new Product("Laptop", 65000);
+        p.showDetails();
+
+        // Change name and price
+        p.name = "Tablet";
+        p.price = 30000;
+
+        p.showDetails();
+    </script>
+</body>
+</html>

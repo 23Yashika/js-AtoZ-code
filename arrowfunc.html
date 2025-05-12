@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <script>
+        let sumnormal = function(a,b)
+{
+    return a+b;
+}
+let s = sumnormal(4,5);
+console.log(s);
+
+// using arrow function
+let sumarrow = (a,b) =>
+{
+    return a+b;
+}
+ s = sumarrow(15,16);
+console.log(s);
+
+//even no need to write function keyword
+let sumarr2 = (a,b) => a+b;
+s = sumarr2(23,21)
+console.log(s);
+
+//let age = Number(prompt('enter your age'))
+//let age = Number(prompt("Enter your age"));
+
+        
+        let showmsg = (Number(prompt("Enter your age")) > 18)
+            ? () => alert('Eligible for voting')
+            : () => alert('Not eligible for voting');
+
+        showmsg();
+
+//chatgpt
+    // let showmsg = (age) => {
+    //     let result = (age >= 18)
+    //         ? () => alert('Eligible for voting')
+    //         : () => alert('Not eligible for voting');
+    //     result(); 
+    // }
+
+    // let ageInput = Number(prompt('Enter your age'));
+    // showmsg(ageInput);
+
+
+    </script>
+</body>
+</html>

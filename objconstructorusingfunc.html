@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add a function in an object we create using object constructor that is using function</title>
+
+</head>
+<body>
+    <script>
+    //let we have a object bok like this
+    function book(x,y,z)
+    {
+        Object.assign(this, {name : x, price : y, author : z});
+
+    }
+
+    //to add a function called update price in previous obj we will write our obj as follows
+    function book(x,y,z)
+    {
+        Object.assign(this, {name : x, price : y, author : z,updateprice});
+       // this.updateprice = updateprice;  
+    }
+
+    //now we need to write function update price
+    function updateprice(s){
+this.price = this.price+s;
+    }
+
+    let b = new book("js",500,'xyz');
+    b.updateprice(500);
+    console.log('update name : '+b.name);
+    console.log('update author : '+b.author);
+   // console.log('update price : '+b.price);
+    console.log('update price : '+b.price);
+</script>
+    </body>
+</html>

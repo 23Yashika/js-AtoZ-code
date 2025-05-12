@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  //convert object into map
+  let obj = {
+    name : "Ram",
+    age : 30,
+  };
+  let m = new Map(Object.entries(obj))
+  console.log(m.get("name"));
+
+  //convert map to object 
+  let mp = new Map();
+  mp.set('banana',1);
+  mp.set('orange',2);
+  mp.set('apple',4);
+  let ob = Object.fromEntries(mp.entries());
+  //make a plain obj
+  console.log(ob.orange);
+
+    </script>
+  
+    
+</body>
+</html>

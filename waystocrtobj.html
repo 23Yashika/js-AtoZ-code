@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three ways to create object</title>
+</head>
+<body>
+    <script>
+        //using object literal
+/*let student = {
+       name : 'Ram',
+        cname : 'btech',
+        dob : '23-05-2006',
+    };
+    console.log("Student name : "+ student.name);
+    console.log("Student class : "+ student.cname);
+    console.log("Student DOB : "+ student.dob);*/
+    
+
+    //using instance of object class
+   /* let emp = new Object();
+    emp.name = 'raja';
+    emp.salary = 100000;
+    emp.designation = 'Manager';
+    console.log("emplyee name : "+ emp.name);
+    console.log("emplyee salary : "+ emp.salary);
+    console.log("emplyee designation : "+ emp.designation);*/
+
+    //using object constructor 
+    function book(x,y,z){
+        this.name = x;
+        this.price = y;
+        this.author = z;
+    }
+    let b = new book('Javascript',3000,'xyz');
+    console.log('Book name : '+ b.name);
+    console.log('Book price : '+ b.price);
+    console.log('Book author : '+ b.author);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cls = {
+            name:"Aksoft",
+            loc:"civil line",
+            type:"software Training",
+            doe : "11/10/2009",
+            timing :{
+                mon : {
+                    open : "6 pm",
+                    close : "9 pm",
+                },
+                sun : {
+                    open : "7 am",
+                    close : "12 pm",
+                },
+                },
+            };
+        console.log("class details : "+cls);
+        //object destructuring 
+        let{name , loc} = cls;
+        console.log("class name : "+name);
+        console.log("class location : "+loc);
+        let{timing} = cls;
+        console.log(timing);
+        //per day timing
+        let{mon} = cls.timing;
+        console.log(mon);
+        //we can also change name of variables
+        let{name: cname, doe: dateOfEst} = cls;
+        console.log('class name : '+cname);
+        console.log('Date of Establishment : '+dateOfEst);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function evaluate(a,b){
+const add = (a+b);
+const sub = (a-b);
+const mul = (a*b);
+const div = (a/b);
+return[add,sub,mul,div]
+
+}
+//getting all values
+let ansall = evaluate(8,4);
+console.log(ansall); //print all
+//destructuring array into seperate variables
+let [a,b,c,d] = evaluate(9,3);
+console.log("Addition : "+a);
+console.log("Multiplication : "+c);
+    </script>
+    
+</body>
+</html>

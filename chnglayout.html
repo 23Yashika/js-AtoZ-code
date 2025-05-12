@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change layout</title>
+</head>
+<body>
+    <div id = 'd1'> This is division 1</div>
+    <div id = 'd2'> This is division 2</div>
+    <input type="button" value="change layout" onclick="changelayout()">
+</body>
+<script>
+    function changelayout()
+    {
+        let x = document.getElementById('d1');
+        console.log(x.innerText);
+        console.log(x.innerHTML);
+        x.style.display = "inline bolck";
+        x.style.backgroundColor = 'red';
+        x.style.color = 'white';
+        x.innerHTML = "Division 1 changed text";
+
+        //changing scnd block css
+        let y = document.getElementById("d2");
+        y.style.display = "inline bolck";
+        y.style.backgroundColor = 'green';
+        y.style.color = 'white';
+        y.innerHTML = "Division 2 changed text";
+
+        //making btn invisible
+        let btn = document.getElementsByTagName("input")[0];
+        btn.style.display = 'None';
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>username phone email dob input </title>
+</head>
+<body>
+    <form onsubmit="obj.voter(event)">
+       Enter user name <br>
+        <input type="text" id="uname" placeholder="Username"><br><br>
+        Enter email id<br>
+        <input type="text" id="email" placeholder="Email id"><br><br>
+        Enter date of birth <br>
+        <input type="text" id="dob" placeholder="Date of birth yyyy-mm-dd"> <br><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+           let obj = {
+            voter : function(event){
+                event.preventDefault();
+                let n = document.getElementById('uname').value;
+      let  em = document.getElementById('email').value;
+        let  d = document.getElementById('dob').value;
+        let dt = new Date();
+let dc = new Date(d);
+let age = dt.getFullYear() - dc.getFullYear();
+            if(age >= 18)
+           {
+            alert("your age is "+ age +" create voter id");
+           }
+           else{
+            alert("no need now you are less than 18");
+           }
+           }
+        };
+    </script>
+</body>
+</html>

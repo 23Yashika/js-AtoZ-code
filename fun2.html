@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = "Ram"
+        // function showName()
+        // {
+        //     console.log("Hello "+user);
+        // }
+        // user = 'Mohan'; //value get changed
+        // showName();
+        // showName();
+
+     /*   function showName(un)
+        {
+            console.log("Hello "+un);
+        }
+        showName('YASHIKA');
+        showName();
+        //Default argument in function 
+        function shownp(name,phone=34566)
+        {
+            console.log('username = '+name + ' userphone = '+phone)
+        }
+        shownp('xyz',12345)
+        shownp('abc')
+        shownp();
+*/
+        let uname = 'Flash';
+        let ph;
+        // function showDetails(uname,ph)
+        // {
+        //     console.log('username = '+un + ' userphone = '+ph)
+        // }
+        // showDetails('xyz',12345)
+        // showDetails('abc')
+        // showDetails();
+
+        // function showDetails(uname, ph) {
+        //     uname = uname ?? 'Ram';  
+        //     ph = ph ?? 'Not Provided'; 
+        //     console.log('username = ' + uname + ', userphone = ' + ph);
+        // }
+
+        // showDetails('xyz', 12345);   
+        // showDetails('abc');          
+        // showDetails();  
+
+        //Nullish Coalencing
+        function showDetails(uname, ph) {
+            console.log('username = ' + uname + ', userphone = ' + ph);
+        }
+        showDetails(uname ?? 'Ram',12345); 
+        showDetails(uname ?? 'Yashika',ph ?? 12345);
+
+        //All functions are hoisted
+        sayhello();
+        function sayhello(){
+            console.log('Hello '+uname);
+        }
+    </script>
+</body>
+</html>

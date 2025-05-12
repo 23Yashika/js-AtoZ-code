@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function</title>
+</head>
+<body>
+    <script>
+        function showOk()
+        {
+            alert("you click on OK");
+        }
+        function showCancel()
+        {
+            alert("you click on Cancel");
+        }
+        function show(question , yes,no)
+        {
+            //let choice = confirm(question)
+            if(confirm(question))
+        yes();
+    else
+    no();
+        }
+        show('Are you ready to learn js ? ', showOk , showCancel)
+    </script>
+</body>
+</html>

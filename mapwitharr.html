@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ //iteration over map elements
+ let recipemap = new Map([["cucumber",500],
+    ["tomatoes",350],
+    ["onion",50],]);
+    //iterate on keys(vegetables)
+    for(let vegetables of recipemap.keys())
+    {
+        console.log(vegetables);
+    }
+    //iterate of values
+    for(let amount of recipemap.values())
+    {
+        console.log(amount);
+    }
+    for(let en of recipemap){
+        //same as recipemap.entries() Method
+        console.log(en);
+    }
+    recipemap.forEach((value,key,map) => {
+        console.log(key+" , "+value);
+
+    });
+    </script>
+   
+</body>
+</html>

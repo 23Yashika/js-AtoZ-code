@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add function in object</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name : 'Ram',
+            surname : 'Rai',
+            cname : 'btech',
+            per : 95.67,
+            age : 18,
+
+            fullname : function(){
+                return this.name +" "+ this.surname;
+            },
+            division : function(){
+if(this.per >= 60)
+console.log("first division");
+if(this.per >= 45 && this.per < 60)
+console.log("second division");
+           }
+        };
+        console.log(student);
+        console.log(student.name);
+        console.log("Full name : "+ student.fullname());
+        student.division();
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variations in array</title>
+</head>
+<body>
+    <script>
+        //some variations and things in array
+let num = [10,22,34];
+console.log("elements of Array : "+num);
+console.log("last element of Array : "+num[2]);
+num[25] = 87;
+//we can add elements in array at any index but should not be preferred
+console.log(num[25]);
+console.log("elements of Array : "+num);
+
+let num2 = [10,22,30];
+console.log("Array before deletion : "+ num2);
+//in deletion or using delete fun it only removes an element a insert a blank space instead
+delete(num2[1]);
+console.log("Array after deletion : "+ num2);
+console.log("Array length : "+ num2.length);
+
+//an array having different types of elements 
+let arr = new Array(10,2.5,'hello',true,function(){ 
+    alert('I am an element of array')
+});
+console.log("elements of array : "+ arr);
+//if want to call a function of an arr
+arr[4]();
+    </script>
+</body>
+</html>

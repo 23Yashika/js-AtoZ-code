@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Define a function in a block in JS</title>
+</head>
+<body>
+    <script>
+        let showmsg = function () {
+            let p = Number(prompt('Enter your percentage'));
+
+            if (p > 75) {
+                let showGreetings = function () {
+                    console.log("You are doing great");
+                };
+                showGreetings();
+            } else if (p > 60) {
+                let showValue = function () {
+                    console.log("You need to work more");
+                }
+                showValue();
+            } else {
+                let showOriginality = function () {
+                    console.log("Understand the condition and work hard");
+                };
+                showOriginality();
+            }
+        };
+
+        showmsg();
+    </script>
+</body>
+</html>
