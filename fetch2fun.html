@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = 'btn'>Get Data</button>
+    <p id = 'p1'></p>
+    <script>
+        let url = "https://techy-api.vercel.app/api/json";
+        const getApidata = async() =>{
+            let response = await fetch(url);
+            console.log(response);
+            let data = await response.json();
+            let para = document.getElementById('p1');
+            para.innerText = data.message;
+        };
+        let b = document.getElementById('btn');
+        b.addEventListener('click',getApidata); 
+    </script>
+</body>
+</html>
